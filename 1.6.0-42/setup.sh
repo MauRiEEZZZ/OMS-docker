@@ -26,8 +26,8 @@ mv $TMPDIR/omsbundle* $TMPDIR/omsbundle
 #/$TMPDIR/omsbundle/oss-kits/docker-cimprov-1.0.0-*.x86_64.sh --install
 #Use downloaded docker-provider instead of the bundled one
 
-/$TMPDIR/docker-cimprov-1.0.0-*.x86_64.sh --install
+#/$TMPDIR/docker-cimprov-1.0.0-*.x86_64.sh --install
 
 rm -rf $TMPDIR/omsbundle
 rm -f $TMPDIR/omsagent*.sh
-rm -f $TMPDIR/docker-cimprov*.sh
+#rm -f $TMPDIR/docker-cimprov*.sh
