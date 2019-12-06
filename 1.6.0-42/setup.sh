@@ -5,7 +5,8 @@ wget https://github.com/Microsoft/OMS-Agent-for-Linux/releases/download/OMSAgent
 
 #create file to disable omi service startup script
 touch /etc/.omi_disable_service_control
-wget https://github.com/Microsoft/Docker-Provider/releases/download/1.0.0-33/docker-cimprov-1.0.0-33.universal.x86_64.sh
+#I wish to disable the cimprov let's see if this is enough
+#wget https://github.com/Microsoft/Docker-Provider/releases/download/1.0.0-33/docker-cimprov-1.0.0-33.universal.x86_64.sh
 chmod 775 $TMPDIR/*.sh
 
 #Extract omsbundle
@@ -25,8 +26,8 @@ mv $TMPDIR/omsbundle* $TMPDIR/omsbundle
 #/$TMPDIR/omsbundle/oss-kits/docker-cimprov-1.0.0-*.x86_64.sh --install
 #Use downloaded docker-provider instead of the bundled one
 
-/$TMPDIR/docker-cimprov-1.0.0-*.x86_64.sh --install
+#/$TMPDIR/docker-cimprov-1.0.0-*.x86_64.sh --install
 
 rm -rf $TMPDIR/omsbundle
 rm -f $TMPDIR/omsagent*.sh
-rm -f $TMPDIR/docker-cimprov*.sh
+#rm -f $TMPDIR/docker-cimprov*.sh
